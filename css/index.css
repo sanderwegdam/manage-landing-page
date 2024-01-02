@@ -1,0 +1,243 @@
+/* =====================================================================================
+    Important Areas
+======================================================================================*/
+
+/* ------------------------------------------------------------------------------------
+    Sub section
+--------------------------------------------------------------------------------------*/
+
+/* =====================================================================================
+    Table of contents
+======================================================================================*/
+
+/*----------------------------
+1.0 ROOT
+----------------------------
+2.0 GLOBAL CLASSES
+----------------------------
+3.0 HEAD - hier staat het hoofd-gedeelte
+3.1 NAV - hier staat het navigatie-gedeelte
+3.2 MAIN - hier staat het main-gedeelte
+3.3 SECTION - hier staat het section-gedeelte
+3.4 FOOTER - hier staat het footer-gedeelte
+----------------------------
+4.0 MEDIA
+---------------------------- */
+
+/* =====================================================================================
+1.0 ROOT
+======================================================================================*/
+
+:root {
+  /* CTA text */
+  --light-red-text: hsl(356, 100%, 66%);
+  /* CTA hover background */
+  --very-light-red-background: hsl(355, 100%, 74%);
+  /* Headings */
+  --very-dark-blue-text: hsl(208, 49%, 24%);
+  /* text */
+  --white--text: hsl(0, 0%, 100%);
+  /* Footer text */
+  --grayish-blue: hsl(240, 2%, 79%);
+  /* Body */
+  --dark-grayish-blue: hsl(207, 13%, 34%);
+  /* Footer */
+  --dark-black-blue: hsl(240, 10%, 16%);
+  /* Background gradient */
+  --very-light-red: hsl(13, 100%, 72%);
+  --light-red: hsl(353, 100%, 62%);
+  /* Body background gradient */
+  --dark-gray-blue: hsl(237, 17%, 21%);
+  --dark-desaturated-blue: hsl(237, 23%, 32%);
+}
+
+/* =====================================================================================
+2.0 GLOBAL CLASSES
+======================================================================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  margin-top: 100px;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* =====================================================================================
+4.0 MEDIA
+======================================================================================*/
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .main-container {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  /* ----------------------header--------------------------------------------------------------- */
+
+  header {
+    width: 100%;
+    background: url(../images/bg-tablet-pattern.svg);
+    height: 600px;
+    background-position: 160px -60px;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-logo{
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    width: 450px;
+  }
+
+  .logo{
+    padding-left: 20px;
+  }
+
+  .menu-links{
+    display: none;
+  }
+
+  .first-get-started{
+    display: none;
+  }
+
+  .image-header{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: block;
+  }
+
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    align-items: center;
+    }
+  }
+
+  /*------------- Section -------------------------------------------------------------------- */
+
+
+  /* ------------------- footer ----------------------------------------------------------------- */
+
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+  .main-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* ----------------------header--------------------------------------------------------------- */
+
+  header {
+    width: 100%;
+  }
+
+  /*------------- Section -------------------------------------------------------------------- */
+
+
+  /* ------------------- footer ----------------------------------------------------------------- */
+  footer {
+    margin-top: 100px;
+    background: var(--dark-black-blue);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--grayish-blue);
+    border-top-right-radius: 100px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  .main-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* ----------------------header--------------------------------------------------------------- */
+
+  header {
+    width: 100%;
+    border-bottom-left-radius: 100px;
+    margin: auto 0;
+  }
+
+  /*------------- Section -------------------------------------------------------------------- */
+
+
+  /* ---------------footer----------------------------------------------------------------- */
+  footer {
+    margin-top: 100px;
+    background: var(--dark-black-blue);
+    height: 600px;
+    display: flex;
+    column-gap: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--grayish-blue);
+    border-top-right-radius: 100px;
+  }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  .main-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* ----------------------header--------------------------------------------------------------- */
+
+  header {
+    width: 100%;
+    margin: auto 0;
+  }
+
+
+  /*------------- Section -------------------------------------------------------------------- */
+
+  /* ---------------footer-------------------------------------------------------------------- */
+
+}
