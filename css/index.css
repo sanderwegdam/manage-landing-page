@@ -29,26 +29,14 @@
 ======================================================================================*/
 
 :root {
-  /* CTA text */
-  --light-red-text: hsl(356, 100%, 66%);
-  /* CTA hover background */
-  --very-light-red-background: hsl(355, 100%, 74%);
-  /* Headings */
-  --very-dark-blue-text: hsl(208, 49%, 24%);
-  /* text */
-  --white--text: hsl(0, 0%, 100%);
-  /* Footer text */
-  --grayish-blue: hsl(240, 2%, 79%);
-  /* Body */
-  --dark-grayish-blue: hsl(207, 13%, 34%);
-  /* Footer */
-  --dark-black-blue: hsl(240, 10%, 16%);
-  /* Background gradient */
-  --very-light-red: hsl(13, 100%, 72%);
-  --light-red: hsl(353, 100%, 62%);
-  /* Body background gradient */
-  --dark-gray-blue: hsl(237, 17%, 21%);
-  --dark-desaturated-blue: hsl(237, 23%, 32%);
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+  --Light-Orange: hsl(15deg 100% 96.08%);
+
+  --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Vary-Light-Gray: hsl(0, 0%, 98%);
 }
 
 /* =====================================================================================
@@ -64,7 +52,7 @@
 body {
   width: 100vw;
   overflow-x: hidden;
-  font-family: "Overpass", sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-size: 16px;
   display: flex;
 
@@ -73,11 +61,22 @@ body {
 }
 
 section {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 a {
   cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+h1, h2, h3, h4{
+  color: var(--Dark-Blue);
+}
+
+p{
+  color: var(--Dark-Grayish-Blue);
 }
 
 /* =====================================================================================
@@ -89,7 +88,6 @@ a {
     width: 480px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
@@ -97,6 +95,8 @@ a {
     display: flex;
     flex-direction: column;
     width: 80%;
+    justify-content: center;
+    align-items: center;
   }
 
   /* ----------------------header--------------------------------------------------------------- */
@@ -104,13 +104,15 @@ a {
   header {
     width: 100%;
     background: url(../images/bg-tablet-pattern.svg);
-    height: 600px;
+    height: 800px;
+    border: 1px solid blue;
     background-position: 160px -60px;
     background-size: 90%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
   }
 
   .container-logo{
@@ -140,11 +142,95 @@ a {
   }
 
   .header-text {
+    z-index: 1;
+    width: 320px;
+    height: 700px;
+  }
+
+  .text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 300px;
+    border: 1px solid black;
     align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header-text-bg{
+    background: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 150px 30px;
+    width: 420px;
+    height: 380px;
+    border: 1px solid orange;
+    margin-left: 200px;
+    margin-top: -250px;
+    z-index: -1;
+  }
+
+    .text h1{
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .text p{
+      line-height: 25px;
+    }
+
+    .header-text p {
+      width: 320px;
+    }
+
+    .get-started{
+      margin-top: 20px;
+      background: var(--Bright-Red);
+      padding-block: 12px;
+      padding-inline: 30px;
+      border-radius: 20px;
+    }
+
+    .different-text{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 380px;
+    }
+
+    .different-text h2 {
+      width: 200px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .number-title{
+      display: flex;
+    }
+
+    .number{
+      background: var(--Bright-Red);
+      border-radius: 20px;
+      padding-block: 5px;
+      padding-inline: 15px;
+      color: white;
+      font-size: 14px;
+    }
+
+    .title{
+      background: var(--Light-Orange);
+      width: 400px;
+      padding-inline: 20px;
+      padding-block: 5px;
+      margin-left: -10px;
+      z-index: -1;
+    }
+
+    .number-p{
+      width: 400px;
+      line-height: 25px;
+      padding-bottom: 40px;
     }
   }
 
