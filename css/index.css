@@ -188,6 +188,7 @@ p{
       padding-block: 12px;
       padding-inline: 30px;
       border-radius: 20px;
+      font-weight: 600;
     }
 
     .different-text{
@@ -207,6 +208,7 @@ p{
 
     .number-title{
       display: flex;
+      margin-bottom: 15px;
     }
 
     .number{
@@ -231,6 +233,99 @@ p{
       width: 400px;
       line-height: 25px;
       padding-bottom: 40px;
+    }
+
+    .container-simplify{
+      height: 300px;
+      background:  url(../images/bg-simplify-section-mobile.svg) var(--Bright-Red);
+      background-repeat: no-repeat;
+      background-size: 20%;
+      background-position: 0px, 40px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 400px;
+    }
+
+    .container-simplify h1{
+      text-align: center;
+      width: 220px;
+      color: white;
+      font-weight: 500;
+    }
+
+    .get-started-simplify{
+      margin-top: 20px;
+      background: white;
+      color: var(--Bright-Red);
+      font-weight: 600;
+      padding-block: 12px;
+      padding-inline: 30px;
+      border-radius: 20px;
+    }
+
+    .container-footer{
+      background: var(--Very-Dark-Blue);
+      height: 550px;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .go-button{
+      margin-top: 20px;
+      background: var(--Bright-Red);
+      color: white;
+      font-weight: 600;
+      padding-block: 12px;
+      padding-inline: 30px;
+      border-radius: 20px;
+    }
+
+    .input-container{
+      padding: 50px;
+    }
+
+    input{
+      height: 40px;
+      width: 200px;
+      border-radius: 20px;
+      padding-inline: 20px
+    }
+
+    .links-container{
+      display: flex;
+      flex-direction: column;
+      height: 130px;
+      width: 240px;
+      flex-wrap: wrap;
+      column-gap: 60px;
+      row-gap: 10px;
+      color: white;
+    }
+
+    .container-socials{
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: space-evenly;
+      width: 260px;
+    }
+
+    .logo {
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+
+    .copyright{
+      margin-top: 50px;
     }
   }
 

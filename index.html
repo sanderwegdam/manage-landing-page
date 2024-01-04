@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/slider.css">
 </head>
 
 <body>
@@ -77,51 +78,47 @@
         </div>
       </section>
 
-      <section>
-        <h1>What they’ve said</h1>
-        <div>
-          <img src="" alt="">
-          <h4>Anisha Li</h4>
-          <p>“Manage has supercharged our team’s workflow. The ability to maintain
-            visibility on larger milestones at all times keeps everyone motivated.”</p>
+      <section class="slider-container">
+        <h1 class="slider-title">What they’ve said</h1>
+        <div class="slider">
+          <div class="slide">
+            <img class="slider-image" src="images/avatar-anisha.png" alt="">
+            <h4>Anisha Li</h4>
+            <p>“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at
+              all times keeps everyone motivated.”</p>
+          </div>
+          <div class="slide">
+            <img class="slider-image" src="images/avatar-ali.png" alt="">
+            <h4>Ali Bravo</h4>
+            <p>“We have been able to cancel so many other subscriptions since using Manage. There is no more
+              cross-channel confusion and everyone is much more focused.”</p>
+          </div>
+          <div class="slide">
+            <img class="slider-image" src="images/avatar-richard.png" alt="">
+            <h4>Richard Watts</h4>
+            <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop
+              recommending them to everyone I talk to!”</p>
+          </div>
+          <div class="slide">
+            <img class="slider-image" src="images/avatar-shanai.png" alt="">
+            <h4>Shanai Gough</h4>
+            <p>“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the
+              whole team in-sync without being intrusive.”</p>
+          </div>
         </div>
-        <div>
-          <img src="" alt="">
-          <h4>Ali Bravo</h4>
-          <p>“We have been able to cancel so many other subscriptions since using
-            Manage. There is no more cross-channel confusion and everyone is much
-            more focused.”</p>
-        </div>
-        <div>
-          <img src="" alt="">
-          <h4>Richard Watts</h4>
-          <p> “Manage allows us to provide structure and process. It keeps us organized
-            and focused. I can’t stop recommending them to everyone I talk to!”</p>
-        </div>
-        <div>
-          <img src="" alt="">
-          <h4>Shanai Gough</h4>
-          <p> “Their software allows us to track, manage and collaborate on our projects
-            from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
-        </div>
+        <div class="dots"></div>
         <a href="#" class="get-started">Get Started</a>
       </section>
 
-      <section>
-        <h1>Simplify how your team works today.</h1>
-        <a href="#">Get Started</a>
+      <section class="container-simplify">
+        <h1>Simplify how <br> your team works today.</h1>
+        <a class="get-started-simplify" href="#">Get Started</a>
       </section>
 
-      <footer>
-        <div class="container-socials">
-          <img src="" alt="">
-          <div class="socials">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-          </div>
+      <footer class="container-footer">
+        <div class="input-container">
+          <input type="text" placeholder="Updates in your inbox…">
+          <a href="" class="go-button">Go</a>
         </div>
         <div class="links-container">
           <div class="links">Home</div>
@@ -132,14 +129,21 @@
           <div class="links">Community</div>
           <div class="links">Privacy Policy</div>
         </div>
-        <div class="input-container">
-          <input type="text">Updates in your inbox…</input>
-          <a href="">Go</a>
+        <div class="container-socials">
+          <div class="socials">
+            <img src="images/icon-facebook.svg" alt="icon-facebook">
+            <img src="images/icon-youtube.svg" alt="icon-youtube">
+            <img src="images/icon-twitter.svg" alt="icon-twitter">
+            <img src="images/icon-pinterest.svg" alt="icon-pinterest">
+            <img src="images/icon-instagram.svg" alt="icon-instagram">
+          </div>
+          <img class="logo" src="images/logo-white.svg" alt="">
         </div>
-        <p>Copyright 2020. All Rights Reserved</p>
+        <p class="copyright">Copyright 2020. All Rights Reserved</p>
       </footer>
     </div>
   </div>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
