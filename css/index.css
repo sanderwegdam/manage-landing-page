@@ -93,7 +93,7 @@ p{
   .wrapper {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     justify-content: center;
     align-items: center;
   }
@@ -152,7 +152,6 @@ p{
   .header-text {
     z-index: 1;
     width: 320px;
-    height: 700px;
   }
 
   .text {
@@ -180,6 +179,8 @@ p{
     .text h1{
       text-align: center;
       margin-bottom: 5px;
+      font-size: 36px;
+      width: 420px;
     }
 
     .text p{
@@ -201,6 +202,12 @@ p{
     }
 
 /*------------- Section -------------------------------------------------------------------- */
+
+  .different-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
     .different-text{
       align-items: center;
@@ -256,12 +263,19 @@ p{
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 400px;
+      width: 100vw;
+    }
+
+     .wrapper-simplify{
+      width: 100%;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
     }
 
     .container-simplify h1{
       text-align: center;
-      width: 220px;
+      width: 200px;
       color: white;
       font-weight: 500;
     }
@@ -281,7 +295,7 @@ p{
     .container-footer{
       background: var(--Very-Dark-Blue);
       height: 550px;
-      width: 400px;
+      width: 100vw;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -426,7 +440,7 @@ p{
   .wrapper {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     justify-content: center;
     align-items: center;
   }
@@ -443,18 +457,8 @@ p{
   .menu-container{
     display: flex;
     justify-content: space-between;
-    width: 1440px;
+    width: 100%;
     padding-top: 40px;
-  }
-
-  .container-logo{
-    display: flex;
-    justify-content: space-between;
-    width: 450px;
-  }
-
-  .logo{
-
   }
 
   .hamburger-menu{
@@ -482,23 +486,26 @@ p{
   .container-header-text{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 100px;
+  }
+
+  .image-header-container{
+    margin-top: 0px;
+    order: 1;
   }
 
   .image-header{
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 40px;
+    width: 580px;
     display: block;
-    order: 1;
-
+    margin-top: 0px;
   }
 
   .header-text {
     z-index: 1;
     width: 320px;
-    height: 700px;
-    margin-top: 40px;
+    padding-top: 320px;
   }
 
   .text {
@@ -531,11 +538,18 @@ p{
       display: flex;
       text-align: left;
       align-items: flex-start;
-      margin-top: 50px;
+    }
+
+    .header-text h1 {
+      font-size: 38px;
+      width: 400px;
     }
 
     .header-text p {
       width: 320px;
+      font-size: 14px;
+      padding-block: 20px;
+      width: 300px;
     }
 
     .header-text .get-started{
@@ -549,10 +563,14 @@ p{
     }
 
 /*------------- Section -------------------------------------------------------------------- */
+    .different-container{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
 
     .different-text{
-      align-items: center;
-      justify-content: center;
+      align-items: flex-start;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -560,10 +578,13 @@ p{
     }
 
     .different-text h2 {
-      width: 200px;
       margin-bottom: 15px;
-      text-align: center;
+      text-align: left;
     }
+
+    .different-text p{
+      text-align: left;
+     }
 
     .number-title{
       display: flex;
@@ -595,23 +616,29 @@ p{
     }
 
     .container-simplify{
-      height: 300px;
+      height: 200px;
       background:  url(../images/bg-simplify-section-mobile.svg) var(--Bright-Red);
       background-repeat: no-repeat;
       background-size: 20%;
       background-position: 0px, 40px;
+      width: 100%;
       justify-content: center;
       display: flex;
-      flex-direction: column;
+    }
+
+    .wrapper-simplify{
+      width: 100%;
+      justify-content: space-around;
+      display: flex;
       align-items: center;
-      width: 400px;
     }
 
     .container-simplify h1{
       text-align: center;
-      width: 220px;
+      width: 280px;
       color: white;
       font-weight: 500;
+      text-align-last: left;
     }
 
     .get-started-simplify{
@@ -629,7 +656,7 @@ p{
     .container-footer{
       background: var(--Very-Dark-Blue);
       height: 550px;
-      width: 400px;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
