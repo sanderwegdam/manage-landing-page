@@ -302,6 +302,12 @@ p{
       justify-content: center;
     }
 
+    .wrapper-footer{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
     .go-button{
       margin-top: 20px;
       background: var(--Bright-Red);
@@ -353,6 +359,7 @@ p{
 
     .copyright{
       margin-top: 50px;
+      color: var(--Dark-Grayish-Blue);
     }
   }
 
@@ -655,12 +662,17 @@ p{
 
     .container-footer{
       background: var(--Very-Dark-Blue);
-      height: 550px;
+      height: 250px;
       width: 100%;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+    }
+
+    .wrapper-footer{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 90%;
     }
 
     .go-button{
@@ -675,6 +687,7 @@ p{
 
     .input-container{
       padding: 50px;
+      order: 2;
     }
 
     input{
@@ -690,13 +703,13 @@ p{
       height: 130px;
       width: 240px;
       flex-wrap: wrap;
-      column-gap: 60px;
+      column-gap: 100px;
       row-gap: 10px;
       color: white;
+      order: 1;
     }
 
     .container-socials{
-      margin-top: 40px;
       display: flex;
       flex-direction: column;
     }
@@ -705,14 +718,18 @@ p{
       display: flex;
       justify-content: space-evenly;
       width: 260px;
+      order: 1;
     }
 
     .logo-footer {
       margin: 0 auto;
-      margin-top: 50px;
+      padding-bottom: 80px;
     }
 
     .copyright{
       margin-top: 50px;
+      order: 3;
+      margin-top: 120px;
+      margin-left: -380px
     }
 }

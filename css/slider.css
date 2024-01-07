@@ -15,7 +15,6 @@
 .slider {
   display: flex;
   width: 440px;
-
 }
 
 .slide {
@@ -63,4 +62,30 @@
 
 .dot.active {
   background-color: var(--Bright-Red);
+}
+
+.get-started{
+      margin-top: 20px;
+      background: var(--Bright-Red);
+      padding-block: 12px;
+      color: white;
+      padding-inline: 30px;
+      border-radius: 20px;
+      font-weight: 600;
+ }
+
+
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  .slider {
+    width: 100vw;
+  }
+
+  .slide {
+    flex: 0 0 33%;
+    margin-top: 150px;
+  }
+
+  .dots {
+    display: none;
+  }
 }

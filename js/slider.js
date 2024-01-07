@@ -1,32 +1,81 @@
 document.addEventListener("DOMContentLoaded", function() {
   const slides = document.querySelectorAll(".slide");
   const dotsContainer = document.querySelector(".dots");
+  const slideCount = slides.length;
   let slideIndex = 0;
+  let slidesPerView = 1; // Standaard weergave van 1 slide
+  let slideInterval;
 
-  // Create dots based on the number of slides
-  slides.forEach((_, index) => {
-    const dot = document.createElement("span");
-    dot.classList.add("dot");
-    dot.addEventListener("click", () => showSlide(index));
-    dotsContainer.appendChild(dot);
-  });
+  function showSlides() {
+    slides.forEach((slide) => {
+      slide.style.display = "none";
+    });
 
-  const dots = document.querySelectorAll(".dot");
-  showSlide(slideIndex);
+    for (let i = slideIndex; i < slideIndex + slidesPerView; i++) {
+      const currentSlide = slides[i % slideCount];
+      if (currentSlide) {
+        currentSlide.style.display = "block";
+      }
+    }
+
+    const dots = document.querySelectorAll(".dot");
+    dots.forEach((dot, index) => {
+      dot.classList.remove("active");
+      if (index === slideIndex) {
+        dot.classList.add("active");
+      }
+    });
+  }
 
   function showSlide(index) {
-    slides.forEach((slide) => slide.classList.remove("active"));
-    dots.forEach((dot) => dot.classList.remove("active"));
-    slides[index].classList.add("active");
-    dots[index].classList.add("active");
     slideIndex = index;
+    showSlides();
   }
 
   function nextSlide() {
-    slideIndex = (slideIndex + 1) % slides.length;
-    showSlide(slideIndex);
+    slideIndex = (slideIndex + 1) % slideCount;
+    showSlides();
   }
 
-//   setInterval(nextSlide, 3000);
-  // Change slide every 3 seconds (3000 milliseconds)
+  // Laat de eerste set van slides zien bij het laden van de pagina
+  showSlides();
+
+  // Voeg dots toe op basis van het totale aantal slides
+  for (let i = 0; i < slideCount; i++) {
+    const dot = document.createElement("span");
+    dot.classList.add("dot");
+    dot.dataset.slideIndex = i;
+    dot.addEventListener("click", (event) => {
+      const clickedSlideIndex = parseInt(event.target.dataset.slideIndex);
+      showSlide(clickedSlideIndex);
+    });
+    dotsContainer.appendChild(dot);
+  }
+
+  // Functie om het aantal slides per view te bepalen op basis van de schermgrootte
+  function setSlidesPerView() {
+    if (window.matchMedia('(min-width: 1440px) and (max-width: 1920px)').matches) {
+      slidesPerView = 3; // Toon 3 slides bij een schermgrootte tussen 1440px en 1920px
+    } else {
+      slidesPerView = 1; // Terug naar 1 slide voor andere schermgroottes
+    }
+    showSlides(); // Toon de slides opnieuw op basis van het gewijzigde aantal slides per view
+  }
+
+  // Voer de functie uit bij het laden van de pagina en bij veranderingen in de schermgrootte
+  setSlidesPerView();
+  window.addEventListener('resize', setSlidesPerView);
+
+  // Start het automatisch doorlopen van de slides met een langzamere intervaltijd van 5 seconden
+  slideInterval = setInterval(nextSlide, 2000);
+
+  // Pauzeer het automatisch doorlopen wanneer de muis over de slider gaat
+  document.querySelector(".slider-container").addEventListener("mouseover", function() {
+    clearInterval(slideInterval);
+  });
+
+  // Hervat het automatisch doorlopen wanneer de muis de slider verlaat
+  document.querySelector(".slider-container").addEventListener("mouseout", function() {
+    slideInterval = setInterval(nextSlide, 2000);
+  });
 });
