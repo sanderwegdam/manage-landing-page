@@ -15,13 +15,7 @@
 ----------------------------
 2.0 GLOBAL CLASSES
 ----------------------------
-3.0 HEAD - hier staat het hoofd-gedeelte
-3.1 NAV - hier staat het navigatie-gedeelte
-3.2 MAIN - hier staat het main-gedeelte
-3.3 SECTION - hier staat het section-gedeelte
-3.4 FOOTER - hier staat het footer-gedeelte
-----------------------------
-4.0 MEDIA
+3.0 MEDIA
 ---------------------------- */
 
 /* =====================================================================================
@@ -79,7 +73,7 @@ p{
 }
 
 /* =====================================================================================
-4.0 MEDIA
+3.0 MEDIA
 ======================================================================================*/
 
 @media only screen and (min-width: 0px) and (max-width: 500px) {
@@ -303,6 +297,13 @@ p{
     }
 
     .wrapper-footer{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .left-container, .right-container{
       align-items: center;
       display: flex;
       flex-direction: column;
@@ -584,6 +585,12 @@ p{
     }
 
     .wrapper-footer{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .left-container, .right-container{
       align-items: center;
       display: flex;
       flex-direction: column;

@@ -53,14 +53,16 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Functie om het aantal slides per view te bepalen op basis van de schermgrootte
-  function setSlidesPerView() {
-    if (window.matchMedia('(min-width: 1440px) and (max-width: 1920px)').matches) {
-      slidesPerView = 3; // Toon 3 slides bij een schermgrootte tussen 1440px en 1920px
-    } else {
-      slidesPerView = 1; // Terug naar 1 slide voor andere schermgroottes
-    }
-    showSlides(); // Toon de slides opnieuw op basis van het gewijzigde aantal slides per view
+ function setSlidesPerView() {
+  if (window.matchMedia('(min-width: 1441px) and (max-width: 1920px)').matches) {
+    slidesPerView = 3; // Toon 3 slides bij een schermgrootte tussen 1440px en 1920px
+  } else if (window.matchMedia('(min-width: 992px) and (max-width: 1440px)').matches) {
+    slidesPerView = 2; // Toon 2 slides bij een schermgrootte tussen 992px en 1440px
+  } else {
+    slidesPerView = 1; // Terug naar 1 slide voor andere schermgroottes
   }
+  showSlides(); // Toon de slides opnieuw op basis van het gewijzigde aantal slides per view
+}
 
   // Voer de functie uit bij het laden van de pagina en bij veranderingen in de schermgrootte
   setSlidesPerView();

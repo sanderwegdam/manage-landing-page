@@ -74,6 +74,21 @@
       font-weight: 600;
  }
 
+ @media only screen and (min-width: 992px) and (max-width: 1440px) {
+  .slider {
+    width: 100vw;
+  }
+
+  .slide {
+    flex: 0 0 50%;
+    margin-top: 150px;
+  }
+
+  .dots {
+    display: none;
+  }
+}
+
 
 @media only screen and (min-width: 1441px) and (max-width: 1920px) {
   .slider {
