@@ -64,6 +64,33 @@ a {
   font-size: 12px;
 }
 
+a:hover{
+  color: var(--Dark-Grayish-Blue);
+}
+
+.get-started:hover, .get-started-simplify:hover, .first-get-started:hover{
+  color: white;
+  background: hsl(12, 94%, 72%);
+}
+
+.get-started-simplify:hover{
+  background: white;
+  color: hsl(12, 94%, 72%);
+}
+
+.go-button:hover{
+  color: white;
+  background: hsl(12, 94%, 72%);
+}
+
+a.links:hover{
+  color: var(--Bright-Red);
+}
+
+input:focus{
+  color: var(--Bright-Red);
+}
+
 h1, h2, h3, h4{
   color: var(--Dark-Blue);
 }
