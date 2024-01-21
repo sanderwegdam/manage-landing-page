@@ -176,7 +176,7 @@ p {
   .menu-open a {
     font-size: 18px;
     font-weight: 600;
-    padding-block: 5px;
+    padding-block: 15px;
     color: var(--Dark-Blue);
   }
 
@@ -491,7 +491,7 @@ p {
   .menu-open a {
     font-size: 22px;
     font-weight: 600;
-    padding-block: 5px;
+    padding-block: 15px;
     color: var(--Dark-Blue);
   }
 
