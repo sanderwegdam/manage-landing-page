@@ -130,14 +130,6 @@
     text-align: center;
   }
 
-  .header-text-bg {
-    width: 420px;
-    height: 380px;
-    margin-left: 200px;
-    margin-top: -250px;
-    z-index: -1;
-  }
-
   .text h1 {
     text-align: left;
     margin-bottom: 5px;
@@ -198,6 +190,8 @@
   .different-text p {
     text-align: left;
   }
+
+  .container-number
 
   .number-title {
     display: flex;
@@ -516,14 +510,6 @@
     align-items: center;
     padding: 20px;
     text-align: center;
-  }
-
-  .header-text-bg {
-    width: 420px;
-    height: 380px;
-    margin-left: 200px;
-    margin-top: -250px;
-    z-index: -1;
   }
 
   .text h1 {
