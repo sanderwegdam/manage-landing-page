@@ -211,7 +211,7 @@ p {
     align-items: center;
     padding: 20px;
     text-align: center;
-    width: 120vw;
+    width: 125vw;
     z-index: 1;
   }
 
@@ -307,7 +307,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120vw;
+    width: 125vw;
   }
 
   .wrapper-simplify {
@@ -339,7 +339,7 @@ p {
   .container-footer {
     background: var(--Very-Dark-Blue);
     height: 550px;
-    width: 120vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

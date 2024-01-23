@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "manage-landing-page"
+    "liveServer.settings.multiRootWorkspaceName": "manage-landing-page",
+    "liveServer.settings.port": 5501
 }
