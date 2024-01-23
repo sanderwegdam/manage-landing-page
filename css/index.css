@@ -118,7 +118,7 @@ p {
   .wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 120vw;
     justify-content: center;
     align-items: center;
   }
@@ -197,8 +197,8 @@ p {
 
   .header-text {
     background: url(../images/bg-tablet-pattern.svg);
-    background-position: 220px 10px;
-    background-size: 90%;
+    background-position: 320px -20px;
+    background-size: 80%;
     height: 500px;
     background-repeat: no-repeat;
     z-index: 1;
@@ -211,6 +211,8 @@ p {
     align-items: center;
     padding: 20px;
     text-align: center;
+    width: 120vw;
+    z-index: 1;
   }
 
   .text h1 {
@@ -305,7 +307,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 120vw;
   }
 
   .wrapper-simplify {
@@ -337,7 +339,7 @@ p {
   .container-footer {
     background: var(--Very-Dark-Blue);
     height: 550px;
-    width: 100vw;
+    width: 120vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -508,7 +510,7 @@ p {
   .header-text {
     background: url(../images/bg-tablet-pattern.svg);
     height: 800px;
-    background-position: 420px 20px;
+    background-position: 440px 20px;
     background-size: 407px 407px;
     background-repeat: no-repeat;
     z-index: 1;
