@@ -109,7 +109,7 @@ p {
 
 @media only screen and (min-width: 0px) and (max-width: 500px) {
   .main-container {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,7 +118,7 @@ p {
   .wrapper {
     display: flex;
     flex-direction: column;
-    width: 120vw;
+    width: 100%;
     justify-content: center;
     align-items: center;
   }
@@ -202,7 +202,7 @@ p {
     height: 500px;
     background-repeat: no-repeat;
     z-index: 1;
-    width: 100vw;
+    width: 100%;
   }
 
   .text {
@@ -211,7 +211,7 @@ p {
     align-items: center;
     padding: 20px;
     text-align: center;
-    width: 125vw;
+    width: 100%;
     z-index: 1;
   }
 
@@ -219,7 +219,7 @@ p {
     text-align: center;
     margin-bottom: 5px;
     font-size: 36px;
-    width: 420px;
+    width: 100%;
   }
 
   .text p {
@@ -227,7 +227,7 @@ p {
   }
 
   .header-text p {
-    width: 320px;
+    width: 100%;
   }
 
   .get-started {
@@ -254,7 +254,7 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 380px;
+    width: 100%;
   }
 
   .different-text h2 {
@@ -292,7 +292,7 @@ p {
   }
 
   .number-p {
-    width: 380px;
+    width: 100%;
     line-height: 25px;
     padding-bottom: 40px;
   }
@@ -307,7 +307,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 125vw;
+    width: 100%;
   }
 
   .wrapper-simplify {
@@ -417,7 +417,7 @@ p {
 
 @media only screen and (min-width: 501px) and (max-width: 768px) {
   .main-container {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -514,7 +514,7 @@ p {
     background-size: 407px 407px;
     background-repeat: no-repeat;
     z-index: 1;
-    width: 100vw;
+    width: 100%;
   }
 
   .text {
@@ -612,7 +612,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
   }
 
   .wrapper-simplify {
@@ -644,7 +644,7 @@ p {
   .container-footer {
     background: var(--Very-Dark-Blue);
     height: 550px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
