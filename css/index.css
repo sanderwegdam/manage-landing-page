@@ -286,10 +286,11 @@ p {
     padding-block: 5px;
     margin-left: -10px;
     z-index: -1;
+    font-size: 15px;
   }
 
   .number-p {
-    width: 400px;
+    width: 380px;
     line-height: 25px;
     padding-bottom: 40px;
   }
